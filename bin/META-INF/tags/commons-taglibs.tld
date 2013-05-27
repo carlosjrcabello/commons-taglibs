@@ -12,7 +12,7 @@
 
 	<tag>
 		<name>gravatar</name>
-		<tagclass>br.com.caelum.vraptor.taglibs.GravatarTag</tagclass>
+		<tagclass>br.inf.carlos.taglibs.gravatar.GravatarTag</tagclass>
 		<bodycontent>JSP</bodycontent>
 		<info>Generate MD5 hash for gravatar profile images.</info>
 
@@ -39,8 +39,34 @@
 	</tag>
 	
 	<tag>
+		<name>disabled</name>
+		<tagclass>br.inf.carlos.taglibs.html.DisabledTag</tagclass>
+		<bodycontent>JSP</bodycontent>
+		<info>Check if an argument combines with other argument to adds disabled attribute.</info>
+
+		<attribute>
+			<name>test</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<name>readonly</name>
+		<tagclass>br.inf.carlos.taglibs.html.ReadOnlyTag</tagclass>
+		<bodycontent>JSP</bodycontent>
+		<info>Check if an argument combines with other argument to adds readOnly attribute.</info>
+
+		<attribute>
+			<name>test</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag>
 		<name>checked</name>
-		<tagclass>br.com.caelum.vraptor.taglibs.html.CheckedTag</tagclass>
+		<tagclass>br.inf.carlos.taglibs.html.CheckedTag</tagclass>
 		<bodycontent>JSP</bodycontent>
 		<info>Check if an argument combines with other argument to adds checked attribute.</info>
 
@@ -53,7 +79,7 @@
 	
 	<tag>
 		<name>selected</name>
-		<tagclass>br.com.caelum.vraptor.taglibs.html.SelectedTag</tagclass>
+		<tagclass>br.inf.carlos.taglibs.html.SelectedTag</tagclass>
 		<bodycontent>JSP</bodycontent>
 		<info>Check if an argument combines with other argument to adds selected attribute.</info>
 
