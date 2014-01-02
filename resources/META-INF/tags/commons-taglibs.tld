@@ -9,7 +9,26 @@
 	
 	<uri>http://carlos.inf.br/commons-taglibs</uri>
 	<info>Any usefull tag functions to HTML coding.</info>
+	
+	<tag>
+		<name>messages</name>
+		<tagclass>br.inf.carlos.taglibs.html.VRaptorMessageTag</tagclass>
+		<bodycontent>JSP</bodycontent>
+		<info>Default bootstrap style messages.</info>
 
+		<attribute>
+			<name>messages</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		
+		<attribute>
+			<name>locale</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
 	<tag>
 		<name>gravatar</name>
 		<tagclass>br.inf.carlos.taglibs.gravatar.GravatarTag</tagclass>

@@ -1,12 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>br.inf.carlos.commons.taglibs</groupId>
+	<groupId>br.inf.carlos</groupId>
 	<artifactId>commons-taglibs</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.4-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.vraptor.version>3.5.2</project.vraptor.version>
 	</properties>
 
 	<build>
@@ -14,9 +15,9 @@
 		<finalName>${project.artifactId}-${project.version}</finalName>
 		<resources>
 			<resource>
-				<directory>src</directory>
+				<directory>resources</directory>
 				<includes>
-					<include>**/*.properties</include>
+					<include>**/*.*</include>
 				</includes>
 				<filtering>true</filtering>
 			</resource>
@@ -49,6 +50,14 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>br.com.caelum</groupId>
+			<artifactId>vraptor</artifactId>
+			<version>${project.vraptor.version}</version>
+			<optional>true</optional>
+			<scope>compile</scope>
+		</dependency>
+		
+		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
 			<version>2.5</version>
@@ -68,6 +77,12 @@
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+			<version>2.2</version>
 		</dependency>
 	</dependencies>
 </project>
