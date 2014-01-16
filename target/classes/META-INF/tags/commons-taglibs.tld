@@ -12,7 +12,7 @@
 	
 	<tag>
 		<name>messages</name>
-		<tagclass>br.inf.carlos.taglibs.html.VRaptorMessageTag</tagclass>
+		<tagclass>br.inf.carlos.taglibs.html.MessageTag</tagclass>
 		<bodycontent>JSP</bodycontent>
 		<info>Default bootstrap style messages.</info>
 
